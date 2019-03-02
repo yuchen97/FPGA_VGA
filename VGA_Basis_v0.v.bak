@@ -1,0 +1,84 @@
+//==========================================================================
+//File Name				:	VGA_Basis_v0.v
+//Module					:	VGA_Basis_v0
+//Function				:	Simple VGA Display RTL top module
+//Type					:	RTL
+//Device					:	DE2_115 Cyclone IV EP4CE115F29C7N 
+//--------------------------------------------------------------------------
+//Update History	:
+//--------------------------------------------------------------------------
+//Verison				Date					Code by				Contents
+//0.0.0					2017/11/15			Chen Yu				create new
+//
+//==========================================================================
+//End Verison
+//==========================================================================
+module VGA_Basis_v0
+(
+	input						CLK_50M_i	,
+	input						RST_i			,
+);
+
+parameter	HOR_SYNC = 12'd208;
+parameter	H_BACK_PROCH = 12'B344;
+parameter	H_ADDR = 12'B1920;
+parameter	H_FRONT_PROCH = 12'B136;
+parameter	H_TOTAL = 12'B2608;
+
+parameter	VER_SYNC = 12'd5;
+parameter	V_BACK_PROCH = 12'B42;
+parameter	V_ADDR = 12'B1080;
+parameter	V_FRONT_PROCH = 12'B3;
+parameter	V_TOTAL = 12'B1130;
+
+reg			[11:0]		X_CNT;
+reg			[11:0]		Y_CNT;
+
+reg 							W_DATA_EN;
+
+reg 			[ 7:0]		RGB_R_o;
+reg 			[ 7:0]		RGB_G_o;
+reg 			[ 7:0]		RGB_B_o;
+reg 			[ 7:0]		RGB_R_i;
+reg 			[ 7:0]		RGB_G_i;
+reg 			[ 7:0]		RGB_B_i;
+/*=========================================================================+/
+||																									||
+||					Horizontal counter and Hor Sync Signal Generate					||
+||																									||
+/+=========================================================================*/
+always@(posedge CLK_50M_i or negedge RST_i) begin
+	if(!RST_i)
+		X_CNT	<= 12'd0;
+	else	if(X_CNT < H_TOTAL-12'B1)
+		X_CNT	<=	X_CNT + 12'd1;
+	else
+		X_CNT	<=	12'd0;
+end
+/*=========================================================================+/
+||																									||
+||					Vertical counter and Ver Sync Signal Generate					||
+||																									||
+/+=========================================================================*/
+always@(posedge CLK_50M_i or negedge RST_i) begin
+	if(!RST_i)
+		Y_CNT	<= 12'd0;
+	else	if((X_CNT == H_TOTAL-12'B1)&&(Y_CNT < V_TOTAL-12'B1))
+		Y_CNT	<=	Y_CNT + 12'd1;
+	else
+		Y_CNT	<=	12'd0;
+end
+/*=========================================================================+/
+||																									||
+||							Write Requst Enable and X\Y Position						||
+||																									||
+/+=========================================================================*/
+assign	W_DATA_EN = (X_CNT >= HOR_SYNC + H_BACK_PROCH)&&
+							(X_CNT <  HOR_SYNC + H_BACK_PROCH + H_ADDR)&&
+							(Y_CNT >= VER_SYNC + V_BACK_PROCH)&&
+							(Y_CNT <  VER_SYNC + V_BACK_PROCH + V_ADDR);
+							
+assign	{RGB_R_o,RGB_G_o,RGB_B_o}	=	W_DATA_EN ? {RGB_R_i,RGB_G_i,RGB_B_i} : 24'b0;
+
+assign X_POS_o = W_DATA_RE?(X_CNT-HOR_SYNC-H_BACK_PROCH + 12'd1):12'd0;
+assign Y_POS_o = W_DATA_RE?(Y_CNT-VER_SYNC-V_BACK_PROCH + 12'd1):12'd0;			

@@ -1,0 +1,27 @@
+module	ADV7123_Driver
+(
+	input		VGA_CLK,
+	input		VGA_SYNC,
+	input		VGA_BLANK,
+	input		RST_i,
+	
+	input [7:0] RGB_R_i,
+	input [7:0] RGB_G_i,
+	input [7:0] RGB_B_i,
+	
+	output 	[7:0] AD_R_o,
+	output 	[7:0] AD_G_o,
+	output 	[7:0] AD_B_o
+);
+
+//assign	VGA_SYNC = 1'b0;
+//assign	VGA_BLANK = 1'B1;
+always@(posedge VGA_CLK,negedge RST_i)begin
+	if(!RST_i)begin 
+		{AD_R_o,AD_G_o,AD_B_o}<={8'b0,8'b0,8'b0};
+	end else if((!VGA_SYNC)&&(VGA_BLANK))begin
+			{AD_R_o,AD_G_o,AD_B_o}<={RGB_R_i,RGB_G_i,RGB_B_i};
+	end else begin
+			{AD_R_o,AD_G_o,AD_B_o}<={8'b0,8'b0,8'b0};
+	end
+end

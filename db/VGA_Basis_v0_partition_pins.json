@@ -1,0 +1,117 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "HS_o",
+					"strict" : false
+				},
+				{
+					"name" : "VS_o",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_R_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_R_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_R_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_R_o[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_R_o[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_R_o[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_R_o[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_R_o[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_G_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_G_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_G_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_G_o[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_G_o[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_G_o[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_G_o[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_G_o[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_B_o[0]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_B_o[1]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_B_o[2]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_B_o[3]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_B_o[4]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_B_o[5]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_B_o[6]",
+					"strict" : false
+				},
+				{
+					"name" : "RGB_B_o[7]",
+					"strict" : false
+				},
+				{
+					"name" : "RST_i",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

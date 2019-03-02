@@ -1,0 +1,110 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\Buffer\FPGA_BUFFER\VGA_Basis_v0\simulation\modelsim
+vIP
+I05o7nV_Ihh<6:X]05R^9X3
+VZR1jQB`J;DePnz47>5AXR1
+Z1 dE:\Buffer\FPGA_BUFFER\VGA_Basis_v0\simulation\modelsim
+w1510820261
+8E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/IP.v
+FE:/Buffer/FPGA_BUFFER/VGA_Basis_v0/IP.v
+L0 40
+Z2 OV;L;10.1d;51
+r1
+31
+Z3 o-vlog01compat -work work -O0
+Z4 !s92 -vlog01compat -work work +incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0 -O0
+n@i@p
+!i10b 1
+!s100 fXS^X><Mz8HQc75@OJiS[1
+!s85 0
+!s108 1510990090.110000
+!s107 E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/IP.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0|E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/IP.v|
+!s101 -O0
+vIP_altpll
+I7Soi@zGg:<Bz:z^0Z3GhS3
+VWV0WV]UDWf3]lHcj0dkaE2
+R1
+w1510762189
+8E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/db/ip_altpll.v
+FE:/Buffer/FPGA_BUFFER/VGA_Basis_v0/db/ip_altpll.v
+L0 31
+R2
+r1
+31
+R3
+n@i@p_altpll
+!i10b 1
+!s100 n>BJIHQmnODjenTmhlV952
+!s85 0
+!s108 1510990090.403000
+!s107 E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/db/ip_altpll.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/db|E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/db/ip_altpll.v|
+!s101 -O0
+!s92 -vlog01compat -work work +incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/db -O0
+vVGA_Basis_v0
+Ie:b<E9C>i;jOHEhEEXmBC2
+VV^ja;ASX1E;;?^b[iV@ZF1
+R1
+w1510987513
+8E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Basis_v0.v
+FE:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Basis_v0.v
+L0 16
+R2
+r1
+31
+R3
+n@v@g@a_@basis_v0
+R4
+!i10b 1
+!s100 MO6C;H=Pk;_Sm7l]B<PRm0
+!s85 0
+!s108 1510990089.986000
+!s107 E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Basis_v0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0|E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Basis_v0.v|
+!s101 -O0
+vVGA_Basis_v0_vlg_tst
+!i10b 1
+!s100 4LKeo9QHU[@QefGdQod3n2
+IM9N@A:NiiO`lHQ^M<ViZ63
+V9Q4@z5`W]dDTH<6L50C0B3
+R1
+w1510990077
+8E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/simulation/modelsim/VGA_Basis_v0.vt
+FE:/Buffer/FPGA_BUFFER/VGA_Basis_v0/simulation/modelsim/VGA_Basis_v0.vt
+L0 4
+R2
+r1
+!s85 0
+31
+!s108 1510990090.578000
+!s107 E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/simulation/modelsim/VGA_Basis_v0.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/simulation/modelsim|E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/simulation/modelsim/VGA_Basis_v0.vt|
+!s101 -O0
+R3
+!s92 -vlog01compat -work work +incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/simulation/modelsim -O0
+n@v@g@a_@basis_v0_vlg_tst
+vVGA_Driver
+I310mA]B5Pi;cY2_`6<k7;0
+VJRK]T@IdPP;g[b`0Y]Iz;1
+R1
+w1510980649
+8E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Driver.v
+FE:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Driver.v
+L0 1
+R2
+r1
+31
+R3
+R4
+n@v@g@a_@driver
+!i10b 1
+!s100 keZ@gcDNBN[DEOE;SlRf_3
+!s85 0
+!s108 1510990090.261000
+!s107 E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Driver.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0|E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Driver.v|
+!s101 -O0

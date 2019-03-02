@@ -1,0 +1,116 @@
+# Reading D:/sw_tech/modelsim_altera13_1/modelsim_ase/tcl/vsim/pref.tcl 
+# do VGA_Basis_v0_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying D:\sw_tech\modelsim_altera13_1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied D:\sw_tech\modelsim_altera13_1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0 {E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Basis_v0.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module VGA_Basis_v0
+# 
+# Top level modules:
+# 	VGA_Basis_v0
+# vlog -vlog01compat -work work +incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0 {E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/IP.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IP
+# 
+# Top level modules:
+# 	IP
+# vlog -vlog01compat -work work +incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0 {E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/VGA_Driver.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module VGA_Driver
+# 
+# Top level modules:
+# 	VGA_Driver
+# vlog -vlog01compat -work work +incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/db {E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/db/ip_altpll.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module IP_altpll
+# 
+# Top level modules:
+# 	IP_altpll
+# 
+# vlog -vlog01compat -work work +incdir+E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/simulation/modelsim {E:/Buffer/FPGA_BUFFER/VGA_Basis_v0/simulation/modelsim/VGA_Basis_v0.vt}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module VGA_Basis_v0_vlg_tst
+# 
+# Top level modules:
+# 	VGA_Basis_v0_vlg_tst
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  VGA_Basis_v0_vlg_tst
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps VGA_Basis_v0_vlg_tst 
+# Loading work.VGA_Basis_v0_vlg_tst
+# Loading work.VGA_Basis_v0
+# Loading work.IP
+# Loading altera_mf_ver.altpll
+# Loading altera_mf_ver.ALTERA_DEVICE_FAMILIES
+# Loading altera_mf_ver.pll_iobuf
+# Loading work.VGA_Driver
+# Loading altera_mf_ver.MF_cycloneiii_pll
+# Loading altera_mf_ver.cda_m_cntr
+# Loading altera_mf_ver.cda_n_cntr
+# Loading altera_mf_ver.cda_scale_cntr
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: VGA_Basis_v0_vlg_tst.i1.IP_Init.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 55000  Instance: VGA_Basis_v0_vlg_tst.i1.IP_Init.altpll_component.cycloneiii_pll.pll3
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/HOR_SYNC
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/H_BACK_PROCH
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/H_ADDR
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/H_FRONT_PROCH
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/H_TOTAL
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/VER_SYNC
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/V_BACK_PROCH
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/V_ADDR
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/V_FRONT_PROCH
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/V_TOTAL
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/BLACK_RGB
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/BLUE_RGB
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/GREEN_RGB
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/CYAN_RGB
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RED_RGB
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/PURPLE_RGB
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/YELLOW_RGB
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/WHITE_RGB
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/CLK_50M_i
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RST_i
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/CLK_220M_i
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/PLL_LOCK
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RST_PLL_i
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/HS_o
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/VS_o
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/VGA_SYNC
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/VGA_BLANK
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RGB_R_o
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RGB_G_o
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RGB_B_o
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/X_CNT
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/Y_CNT
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/X_POS_o
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/COLOR_EN
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/W_DATA_EN
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RED_DATA_8
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/GREEN_DATA_8
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/BLUE_DATA_8
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RGB_R_i
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RGB_G_i
+add wave -position end  sim:/VGA_Basis_v0_vlg_tst/i1/VGA_Driver_Init/RGB_B_i
+restart
+run -all
+#  Note : Cyclone IV E PLL was reset
+# Time: 0  Instance: VGA_Basis_v0_vlg_tst.i1.IP_Init.altpll_component.cycloneiii_pll.pll3
+#  Note : Cyclone IV E PLL locked to incoming clock
+# Time: 55000  Instance: VGA_Basis_v0_vlg_tst.i1.IP_Init.altpll_component.cycloneiii_pll.pll3
+# WARNING: No extended dataflow license exists
